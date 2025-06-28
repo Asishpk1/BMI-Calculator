@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="./bmi.js"></script>
+<link rel="stylesheet" href="./bmistyle.css">
+<body>
+    <div style="background-image: linear-gradient(to right,red,rgb(157, 2, 2),rgb(125, 3, 3)); height: 100vh;" class="d-flex align-items-center justify-content-center">
+        <div style="height: 350px; width: 650px; background-image: linear-gradient(to right,rgb(200, 4, 4),rgb(175, 1, 1)); box-shadow: rgba(0, 0, 0, 0.45) 0px 38px 28px -20px; border-radius: 40px;">
+            <h1 style="color: white; font-weight: 800;font-family: 'Figtree', sans-serif; font-size: 90px;" class="ps-4 pt-4">BMI</h1>
+            <h3 style="font-family: 'Quicksand', sans-serif; color: white; font-weight: lighter;" class="ps-4">body mass <br>index</h3>
+        </div>
+        <div style="background-color: white; height: 520px; width: 330px; margin-left: -363px;box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 20px -20px; border-radius: 40px;">
+            <h4 style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; margin-top: 64px;" class="ps-5">WEIGHT  &nbsp;<span style="color: rgb(189, 185, 185);">kg</span></h4>
+            <input id="weight" type="text" style="border: none; border-bottom: solid 1px; height: 60px; font-size: 60px; width: 197px; font-family: 'Figtree', sans-serif; font-weight: bolder; color: rgb(168, 164, 164); outline: none; margin-left: 50px; " class="" placeholder="0"> <br><br>
+            <h4 style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; margin-top: 10px;" class="ps-5">HEIGHT  &nbsp;<span style="color: rgb(189, 185, 185);">M</span></h4>
+            <input id="height" type="text" style="border: none; border-bottom: solid 1px; height: 60px; font-size: 60px; width: 197px; font-family: 'Figtree', sans-serif; font-weight: bolder; color: rgb(168, 164, 164); outline: none; margin-left: 50px;" placeholder="0" ><br><br>
+            <div class="d-flex align-items-baseline">
+                <h3 id="bmi" style="font-size: 60px; color: rgb(239, 236, 236); font-weight: bolder; margin-left: 50px;font-family: 'Figtree', sans-serif;">Your</h3>
+                <h3 id="bmiword" style="font-size: 18px; font-weight: 600; color: rgb(239, 236, 236);">BMI</h3>
+            </div>
+            <h3 id="condition" style="font-size: 23px; color: rgb(239, 236, 236); font-weight: bolder; margin-left: 50px;font-family: 'Figtree', sans-serif;">Category</h3>
+            <button id="button" class="" style="border: none; padding: 10px 80px; margin-left: 35px; margin-top: 30px; background-color: rgb(210, 5, 5); color: white;font-family: 'Figtree', sans-serif; font-weight: 600; letter-spacing: 1px;border-radius: 25px;" onclick="calculate()">CALCULATE</button>
+            
+        </div>
+    </div>
+</body>
+</html>
