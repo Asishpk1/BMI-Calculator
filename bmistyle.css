@@ -3,4 +3,13 @@
   opacity: 0.5;
   
 }
+@media(max-width:480px){
+  #redbox{
+    display: none;
+  }
+  #whitebox{
+    margin-left: 0px;
+    margin-right: -360px;
+  }
+}
 
